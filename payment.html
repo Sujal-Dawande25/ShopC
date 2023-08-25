@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Options</title>
+<style>
+  /* ... Previous styles ... */
+  .place-order-btn {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .order-message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .payment-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .payment-option {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .payment-option:hover {
+    background-color: #f4f4f4;
+  }
+  .payment-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Choose a Payment Option</h2>
+    <p>Please select your preferred payment method after entering your address:</p>
+    <div class="payment-options">
+      <div class="payment-option" data-method="Credit Card">
+        <img src="c.jpg" alt="Credit Card" class="payment-icon">
+        <input type="radio" id="payment" name="payment" value="Card"> Card
+      </div>
+      <br>
+      <div class="payment-option" data-method="PayPal">
+        <img src="u.jpg" alt="PayPal" class="payment-icon">
+        <input type="radio" id="payment" name="payment" value="PayPal"><label>PayPal</label>
+      </div>
+      <div class="payment-option" data-method="Cash On Delivery">
+        <img src="ca.jpg" alt="Cash on delivery" class="payment-icon">
+        <input type="radio" id="payment" name="payment" value="Cash On Delivery">Cash On Delivery
+      </div>
+      <!-- Add more payment options here -->
+    </div>
+    <button class="place-order-btn" id="placeOrderBtn">Place Order</button>
+    <p class="order-message" id="orderMessage"></p>
+  </div>
+</body>
+</html>
+
+
+ 
